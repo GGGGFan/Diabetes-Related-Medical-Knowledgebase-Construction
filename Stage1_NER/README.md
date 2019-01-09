@@ -6,6 +6,7 @@ python 3.6<br/>
 Tensorflow 1.8.0<br/>
 Keras 2.2.4<br/>
 Keras_contrib 0.0.2<br/>
+(Keras is used in this stage for easier CRF decoding)
 ### Usage:<br/>
 predict.py: Load trained model and predict<br/>
 python main.py: Train from raw data and predict<br/>
