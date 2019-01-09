@@ -1,5 +1,5 @@
-### Ranking
-* 39th, F1 score of 0.625
+### Leaderboard
+* 39th of 1629, F1 score of 0.625
 
 ### Pipeline
 * In order to maintain the independency among features, attention-based models are trained with different data.
