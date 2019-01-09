@@ -9,6 +9,6 @@ Keras_contrib 0.0.2<br/>
 (Keras is used in this stage for easier CRF decoding)
 ### Usage:<br/>
 predict.py: Load trained model and predict<br/>
-python main.py: Train from raw data and predict<br/>
+main.py: Train from raw data and predict<br/>
 
 Note: Due to the use of GPU, results may differ from submission if model is re-trained from raw data even though random seed is set.
