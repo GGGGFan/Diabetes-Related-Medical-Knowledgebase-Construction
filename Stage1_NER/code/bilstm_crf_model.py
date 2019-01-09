@@ -1,5 +1,3 @@
-# A qucik salute to open source work https://github.com/zhpmatrix/tianchi-ruijin where I borrowed lines of codes.
-
 from keras.models import Sequential
 from keras.layers import Embedding, Bidirectional, LSTM, GRU, Dropout, TimeDistributed, Dense
 from keras_contrib.layers import CRF
