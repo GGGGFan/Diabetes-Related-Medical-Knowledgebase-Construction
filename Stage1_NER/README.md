@@ -1,6 +1,6 @@
 ### CODES ARE ADUJSTED FOR ALIBABA'S REVIEW
-### Pipeline:
-Random Embedding + BiLSTM + CRF
+### Model:
+Random Embedding on Character level + BiLSTM + CRF
 ### Requirement:<br/>
 python 3.6<br/>
 Tensorflow 1.8.0<br/>
