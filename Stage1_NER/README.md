@@ -8,7 +8,7 @@ Keras 2.2.4<br/>
 Keras_contrib 0.0.2<br/>
 <br/>
 ### Usage:<br/>
--Load trained model and predict: python predict.py<br/>
--Or train from raw data and predict: python main.py<br/>
+predict.py: Load trained model and predict<br/>
+python main.py: Train from raw data and predict<br/>
 
 Note: Due to the use of GPU, results may differ from submission if model is re-trained from raw data even though random seed is set.
