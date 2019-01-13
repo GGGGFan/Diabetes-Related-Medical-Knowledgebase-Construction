@@ -182,6 +182,21 @@ maxDis = 60
 for file in lgb_files[:11]:
     feat_mega(file)
 
+# Prepare data
+y = np.array(relTT)
+n_values = np.max(fakeResTT) + 1
+fakeResTT = np.eye(n_values)[fakeResTT]
+senLenTT = np.array(senLenTT)
+nStripTT = np.array(nStripTT)
+disBwTT = np.array(disBwTT)
+nSepTT = np.array(nSepTT)
+X = np.stack((senLenTT, nStripTT, disBwTT, nSepTT)).T
+X = np.concatenate((X, fakeResTT), axis=1)
+
+# Data split
+X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.06, random_state=41)
+X_val, X_test, y_val, y_test = train_test_split(X_val, y_val, test_size=0.3, random_state=41)
+
 # Train LGB as mege-model
 train_data = lgb.Dataset(X, label=y)
 val_data = lgb.Dataset(X_val, label=y_val)
