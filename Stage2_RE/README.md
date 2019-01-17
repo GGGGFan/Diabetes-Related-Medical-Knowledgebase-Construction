@@ -11,4 +11,4 @@
 * mega_train.py: use the output of attention-based models as well as five hand-crafted features to train a LightGBM model.<br/>
 * test_write.py: make predictions and write submission files.<br/>
 ### Notice
-The F1 score can be over 0.72 with 50000 epochs on LightGBM. The 0.625 F1 score is achieved from 5000 epochs.(I forgot a ZERO when setting parameters for the final submission!)
+The F1 score can be over 0.72 with 50000 epochs on LightGBM, which is close to top 10 teams in the final leaderboard. The 0.625 F1 score is achieved from 5000 epochs.(I forgot a ZERO when setting parameters for the final submission!)
